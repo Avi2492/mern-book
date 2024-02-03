@@ -35,7 +35,7 @@ function EditBooks() {
     };
     setIsLoading(true);
     axios
-      .put(`http://localhost:5000/book/${id}`, data)
+      .put(`https://mern-book-roan.vercel.app/book/${id}`, data)
       .then(() => {
         setIsLoading(false);
         navigate("/");

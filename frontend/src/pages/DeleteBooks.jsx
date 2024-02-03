@@ -12,7 +12,7 @@ function DeleteBooks() {
     setIsLoading(true);
     console.log("Deleting book with id:", id);
     axios
-      .delete(`http://localhost:5000/book/${id}`)
+      .delete(`https://mern-book-roan.vercel.app/book/${id}`)
       .then(() => {
         setIsLoading(false);
         alert("Deleted Successfully");
