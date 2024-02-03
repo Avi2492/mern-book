@@ -5,7 +5,7 @@ import { MdOutlineAddBox, MdOutlineDelete } from "react-icons/md";
 import { BsInfoCircle } from "react-icons/bs";
 import { AiOutlineEdit } from "react-icons/ai";
 
-import Spinner from "../components/spinner/Spinner";
+import SpinnerLoader from "../components/spinner/SpinnerLoader";
 
 function Home() {
   const [isBooks, setIsBooks] = useState([]);
@@ -34,7 +34,7 @@ function Home() {
         </Link>
       </div>
       {isLoading ? (
-        <Spinner />
+        <SpinnerLoader />
       ) : (
         <table className="w-full border-separate border-spacing-2">
           <thead>

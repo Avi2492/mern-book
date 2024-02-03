@@ -2,7 +2,7 @@ import axios from "axios";
 import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import BackButton from "../components/button/BackButton";
-import Spinner from "../components/spinner/Spinner";
+import SpinnerLoader from "../components/spinner/SpinnerLoader";
 
 function ShowBooks() {
   const [isBook, setIsBook] = useState([]);
@@ -25,7 +25,7 @@ function ShowBooks() {
       <BackButton />
       <h1 className="text-3xl my-4">Show Book</h1>
       {isLoading ? (
-        <Spinner />
+        <SpinnerLoader />
       ) : (
         <div className="flex flex-col border-2 border-sky-400 rounded-xl w-fit p-4">
           <div className="my-4">
